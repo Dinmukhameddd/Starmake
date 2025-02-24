@@ -1,0 +1,116 @@
+.next-container {
+  display: flex;
+  padding: 40px;
+  background-color: #f5f7fc;
+  height: 100vh;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Основной блок с текстом */
+.script-section {
+  flex: 2;
+  text-align: start;
+}
+
+/* Заголовки */
+.script-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #212121;
+}
+
+.script-subtitle {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Группа для textarea */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Улучшенные стили для текстовых полей */
+.form-group textarea,
+.bot__request textarea,
+.loud-start textarea {
+  width: 95%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 100%;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  resize: vertical;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-group textarea:focus {
+  border-color: #2978d9;
+  outline: none;
+}
+
+/* AI-блок */
+.bot {
+  background: #307BC0;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Кнопки AI */
+.ai-button {
+  background: white;
+  color: black;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.ai-button:hover {
+  background: #e0e0e0;
+}
+
+/* Кнопка "Далее" */
+.next-button {
+  background: #2978d9;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.next-button:hover {
+  background: #1f4a8a;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .next-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .script-section {
+    flex: none;
+  }
+
+  .bot {
+    width: 100%;
+    padding: 15px;
+  }
+}

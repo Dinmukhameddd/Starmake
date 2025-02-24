@@ -1,0 +1,130 @@
+.templates-container {
+  display: flex;
+  padding: 40px;
+  background-color: #f5f7fc;
+  height: 100vh;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.script-section {
+  flex: 2;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Стили для SELECT */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #307BC0; /* Синий цвет границы */
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Стили для OPTION */
+.form-select option {
+  padding: 12px;
+  font-size: 16px;
+  color: black;
+  background: white;
+  border-bottom: 1px solid #307BC0; /* Синяя линия между пунктами */
+}
+
+/* Убираем синюю границу у последнего option */
+.form-select option:last-child {
+  border-bottom: none;
+}
+
+/* Hover-эффект */
+.form-select option:hover {
+  background: #e0f0ff;
+}
+
+/* Стили для TEXTAREA */
+.form-textarea {
+  width: 100%;
+  height: 60px;
+  padding: 1rem; /* Исправлено на 1rem */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #307BC0; /* Синяя граница */
+  resize: none;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* При фокусе */
+.form-textarea:focus {
+  border-color: #2978d9;
+}
+
+/* AI-контрол (как в инспекторе) */
+.ai__ctrl {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/* Нижний блок с прогресс-баром и кнопкой */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Прогресс-бар */
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: lightgray;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 40%;
+  height: 100%;
+  background: #4caf50;
+}
+
+/* Кнопка "ДАЛЕЕ" */
+.next-button {
+  background: #2978d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.next-button:hover {
+  background: #1f4a8a;
+}

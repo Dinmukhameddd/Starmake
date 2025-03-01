@@ -25,6 +25,12 @@ const SelectionScreen: React.FC = () => {
           <h2>ИСПОЛЬЗОВАТЬ ШАБЛОНЫ</h2>
           <p>Собрать сценарий с помощью готового конструктора</p>
         </div>
+        <div className="bottom-bar">
+        <div className="progress-bar">
+          <div className="progress-fill"></div>
+        </div>
+        <button className="next-button">ДАЛЕЕ</button>
+      </div>
 
       </div>
     </div>

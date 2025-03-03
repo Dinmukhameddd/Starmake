@@ -1,0 +1,38 @@
+/* Основной контейнер: центрируем контент */
+.last-script-container {
+    display: flex;
+    min-height: 74vh;
+    flex-direction: column;
+    align-items: center;       /* Горизонтальное центрирование */
+    justify-content: center;   /* Вертикальное центрирование */
+    min-height: 100vh;         /* Чтобы занимало всю высоту экрана */
+    background-color: #F4F7FF;
+    margin: 0;
+  }
+  
+  /* Заголовок */
+  .last-script-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  
+  /* Блок для текста */
+  .last-script-box {
+    width: 50%;
+    max-width: 600px;               /* Чтобы не растягивалось слишком сильно на больших экранах */
+    background-color: #fff;         /* Белый фон */
+    border-radius: 10px;            /* Скруглённые углы */
+    padding: 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Лёгкая тень */
+    text-align: left;              /* Текст по левому краю */
+  }
+  
+  /* Стили для текста внутри блока */
+  .last-script-box p {
+    margin: 0;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Если нужно сохранять переносы строк, полученные с бэка */
+  }
+  

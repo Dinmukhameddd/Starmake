@@ -4,7 +4,7 @@ import { FaChartBar, FaFileAlt, FaTools } from "react-icons/fa";
 
 const Reels: React.FC = () => {
     return (
-        <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 w-full min-h-[390px] flex flex-col justify-center items-center text-white px-6">
+        <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 w-full min-h-[390px] flex flex-col justify-center items-center text-white gap-x-4 px-6">
 
             <div className="md:w-1/2 text-left">
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">

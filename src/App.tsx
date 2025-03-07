@@ -7,7 +7,8 @@ import Library from "./pages/Library";
 import Constructor from "./pages/Constructor";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
-import Third from "./components/Third";
+import AISection from "./components/AISection";
+import Lib from "./components/Lib";
 
 const App = () => {
   return (
@@ -22,7 +23,16 @@ const App = () => {
       </Routes>
       <Hero />
       <Reels />
-      <Third />
+      <AISection
+        imageSrc="https://starmake.ai/static/img/ai/ai.png"
+        title="Используйте AI для создания вирусных видео"
+        points={[
+          "Создайте своего AI видео клона",
+          "Привяжите чат-бот, который автоматически даст лид-магнит",
+          "Напишите сценарий для вирусных видео с помощью конструктора",
+        ]}
+      />
+      <Lib />
     </div>
   );
 };

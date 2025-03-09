@@ -9,6 +9,9 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import AISection from "./components/AISection";
 import Lib from "./components/Lib";
+import Create from "./components/Create";
+import Construct from "./components/Construct";
+import Bot from "./components/Bot";
 
 const App = () => {
   return (
@@ -33,6 +36,9 @@ const App = () => {
         ]}
       />
       <Lib />
+      <Create />
+      <Construct />
+      <Bot />
     </div>
   );
 };
